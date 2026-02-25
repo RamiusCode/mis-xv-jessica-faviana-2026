@@ -1,0 +1,319 @@
+<section class="relative text-black w-full overflow-x-hidden">
+    <!-- ====== FONDO ====== -->
+    <div class="absolute inset-0 z-0">
+        <img
+            src="/imagenes/fondo2.png"
+            alt="Fondo"
+            class="w-full h-full object-cover object-center"
+        />
+        <!-- Overlay suave para dar profundidad -->
+        <!-- <div
+            class="absolute inset-0 bg-gradient-to-b from-pink-100/20 via-transparent to-pink-200/30"
+        >
+        </div> -->
+    </div>
+
+    <!-- ====== FLORES ARRIBA ====== -->
+    <div class="relative w-full overflow-hidden z-10" id="flores-arriba">
+        <img
+            src="/imagenes/FloresArriba.png"
+            alt="Flores decorativas"
+            class="w-full h-auto object-cover object-center block"
+        />
+
+        <!-- CORONA centrada -->
+        <div
+            class="absolute left-1/2 transform -translate-x-1/2 top-[60px] sm:top-12 md:top-10 lg:top-6 xl:top-4 z-50"
+            id="corona"
+        >
+            <img
+                src="/imagenes/Corona.webp"
+                alt="Corona de quinceañera"
+                class="w-20 h-auto sm:w-24 md:w-28 lg:w-32 xl:w-36 object-contain mx-auto drop-shadow-lg"
+            />
+        </div>
+    </div>
+
+    <!-- ====== CONTENIDO PRINCIPAL ====== -->
+    <div class="relative w-full overflow-hidden z-10 flex flex-col">
+        <div class="flex justify-center w-full">
+            <div class="text-center max-w-2xl w-full">
+                <!-- TÍTULO "MIS XV AÑOS" -->
+                <div
+                    class="relative text-center z-30 mb-3 w-full"
+                    id="titulo-container"
+                >
+                    <div class="flex items-center justify-center gap-3 mb-1">
+                        <div
+                            class="h-px w-12 sm:w-16 bg-gradient-to-r from-transparent to-[#c9973a]"
+                        >
+                        </div>
+                        <span class="text-[#c9973a] text-lg">✦</span>
+                        <div
+                            class="h-px w-12 sm:w-16 bg-gradient-to-l from-transparent to-[#c9973a]"
+                        >
+                        </div>
+                    </div>
+
+                    <h1
+                        class="font-crimson text-xl sm:text-2xl md:text-3xl lg:text-4xl text-[#9c2756] font-bold tracking-[6px] sm:tracking-[8px] uppercase"
+                        id="titulo"
+                    >
+                        Mis XV Años
+                    </h1>
+
+                    <div class="flex items-center justify-center gap-3 mt-1">
+                        <div
+                            class="h-px w-12 sm:w-16 bg-gradient-to-r from-transparent to-[#c9973a]"
+                        >
+                        </div>
+                        <span class="text-[#c9973a] text-lg">✦</span>
+                        <div
+                            class="h-px w-12 sm:w-16 bg-gradient-to-l from-transparent to-[#c9973a]"
+                        >
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NOMBRE CON MARIPOSAS -->
+                <div
+                    class="flex items-center justify-center gap-3 sm:gap-6 md:gap-10 mb-2 w-full"
+                    id="nombre-container"
+                >
+                    <div id="mariposa-izq" class="flex-shrink-0">
+                        <img
+                            src="/gif/celeste.png"
+                            alt="Mariposa izquierda"
+                            class="w-8 h-auto sm:w-10 md:w-12 object-contain drop-shadow-md"
+                        />
+                    </div>
+
+                    <h2
+                        class="font-great-vibes text-6xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-[#4fc3f7] tracking-wide flex-shrink min-w-0 drop-shadow-sm"
+                        id="nombre-typewriter"
+                    >
+                    </h2>
+
+                    <div id="mariposa-der" class="flex-shrink-0">
+                        <img
+                            src="/gif/celeste.png"
+                            alt="Mariposa derecha"
+                            class="w-8 h-auto sm:w-10 md:w-12 object-contain scale-x-[-1] drop-shadow-md"
+                        />
+                    </div>
+                </div>
+
+                <!-- FOTO CON FLORES LATERALES -->
+                <div
+                    class="relative w-full overflow-visible"
+                    id="foto-container"
+                >
+                    <!-- Flores izquierda -->
+                    <div
+                        id="flores-foto-izq"
+                        class="absolute -left-2 sm:left-0 top-20 sm:top-16 md:top-12 flex-shrink-0 z-30"
+                    >
+                        <img
+                            src="/imagenes/FlorLateral.png"
+                            alt="Flores izquierda"
+                            class="w-16 h-auto sm:w-24 md:w-32 lg:w-40 object-contain drop-shadow-md"
+                        />
+                    </div>
+
+                    <!-- Flores derecha -->
+                    <div
+                        id="flores-foto-der"
+                        class="absolute -right-2 sm:right-0 top-20 sm:top-16 md:top-12 flex-shrink-0 z-30"
+                    >
+                        <img
+                            src="/imagenes/FlorLateral.png"
+                            alt="Flores derecha"
+                            class="w-16 h-auto sm:w-24 md:w-32 lg:w-40 object-contain scale-x-[-1] drop-shadow-md"
+                        />
+                    </div>
+
+                    <!-- Imagen quinceañera — ocupa todo el ancho disponible hasta el borde -->
+                    <div class="relative flex justify-center">
+                        <img
+                            src="/imagenes/Quinceañera.png"
+                            alt="Foto de quinceañera"
+                            class="w-full max-w-[85vw] sm:max-w-[70vw] md:max-w-[55vw] lg:max-w-[45vw] xl:max-w-[38vw] h-auto object-contain object-bottom drop-shadow-xl"
+                            id="foto-quinceañera"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    import { gsap } from "gsap";
+
+    document.addEventListener("DOMContentLoaded", () => {
+        // CORONA - Zoom in elegante
+        gsap.fromTo(
+            "#corona",
+            { opacity: 0, scale: 0.4, y: -20 },
+            {
+                opacity: 1,
+                scale: 1,
+                y: 0,
+                duration: 1.4,
+                ease: "elastic.out(1, 0.6)",
+                delay: 0.2,
+            },
+        );
+
+        // TÍTULO - Fade desde arriba con letras
+        gsap.fromTo(
+            "#titulo-container",
+            { opacity: 0, y: -25 },
+            { opacity: 1, y: 0, duration: 1.1, ease: "power3.out", delay: 0.5 },
+        );
+
+        // MARIPOSA IZQUIERDA - Entra y flota
+        gsap.fromTo(
+            "#mariposa-izq",
+            { opacity: 0, x: -60, rotation: -20, scale: 0.7 },
+            {
+                opacity: 1,
+                x: 0,
+                rotation: 0,
+                scale: 1,
+                duration: 1.6,
+                ease: "back.out(1.4)",
+                delay: 0.8,
+            },
+        );
+        gsap.to("#mariposa-izq", {
+            y: -10,
+            rotation: 5,
+            duration: 2.5,
+            ease: "sine.inOut",
+            yoyo: true,
+            repeat: -1,
+            delay: 2.5,
+        });
+        gsap.to("#mariposa-izq", {
+            x: 8,
+            duration: 3.5,
+            ease: "sine.inOut",
+            yoyo: true,
+            repeat: -1,
+            delay: 2.5,
+        });
+
+        // MARIPOSA DERECHA - Entra y flota
+        gsap.fromTo(
+            "#mariposa-der",
+            { opacity: 0, x: 60, rotation: 20, scale: 0.7 },
+            {
+                opacity: 1,
+                x: 0,
+                rotation: 0,
+                scale: 1,
+                duration: 1.6,
+                ease: "back.out(1.4)",
+                delay: 0.8,
+            },
+        );
+        gsap.to("#mariposa-der", {
+            y: -10,
+            rotation: -5,
+            duration: 2.5,
+            ease: "sine.inOut",
+            yoyo: true,
+            repeat: -1,
+            delay: 2.5,
+        });
+        gsap.to("#mariposa-der", {
+            x: -8,
+            duration: 3.5,
+            ease: "sine.inOut",
+            yoyo: true,
+            repeat: -1,
+            delay: 2.5,
+        });
+
+        // FLORES LATERALES - Entran de los lados
+        gsap.fromTo(
+            "#flores-foto-izq",
+            { opacity: 0, x: -120 },
+            { opacity: 1, x: 0, duration: 1.5, ease: "power2.out", delay: 0.9 },
+        );
+        gsap.fromTo(
+            "#flores-foto-der",
+            { opacity: 0, x: 120 },
+            { opacity: 1, x: 0, duration: 1.5, ease: "power2.out", delay: 0.9 },
+        );
+
+        // FOTO - Sube suavemente
+        gsap.fromTo(
+            "#foto-quinceañera",
+            { opacity: 0, y: 50, scale: 0.88 },
+            {
+                opacity: 1,
+                y: 0,
+                scale: 1,
+                duration: 1.6,
+                ease: "power2.out",
+                delay: 0.6,
+            },
+        );
+
+        // NOMBRE - Cascada elegante letra por letra
+        function nombreCascada() {
+            const texto = "Maria";
+            const contenedor = document.getElementById("nombre-typewriter");
+            if (!contenedor) return;
+
+            contenedor.innerHTML = texto
+                .split("")
+                .map(
+                    (letra, index) =>
+                        `<span class="letra-cascada" style="
+                            --i: ${index};
+                            opacity: 0;
+                            display: inline-block;
+                            transform: translateY(28px) scale(0.75);
+                            filter: blur(3px);
+                        ">${letra === " " ? "&nbsp;" : letra}</span>`,
+                )
+                .join("");
+
+            gsap.to(".letra-cascada", {
+                opacity: 1,
+                y: 0,
+                scale: 1,
+                filter: "blur(0px)",
+                duration: 0.9,
+                ease: "back.out(1.8)",
+                stagger: { each: 0.13, from: "start" },
+                delay: 0.7,
+            });
+        }
+
+        nombreCascada();
+    });
+</script>
+
+<style>
+    #flores-arriba,
+    #flores-arriba img {
+        opacity: 1 !important;
+    }
+
+    .letra-cascada {
+        will-change: transform, opacity, filter;
+        position: relative;
+    }
+
+    .letra-cascada:hover {
+        transform: translateY(-4px) scale(1.08) !important;
+        text-shadow: 0 0 16px rgba(162, 119, 53, 0.6) !important;
+        transition:
+            transform 0.2s ease,
+            text-shadow 0.2s ease;
+    }
+</style>
